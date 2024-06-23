@@ -9,22 +9,76 @@
 </head>
 
 <body>
-  <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
-        Code by LN
-      </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/">
-        GitHub
-      </a>
-      <a class="underline underline-offset-2" href="#">
-        Figma
-      </a>
-    </div>
+  <div class="relative w-full h-screen overflow-hidden bg-zinc-200" id="app">
     <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+      <div class="w-96 h-[650px] bg-white rounded-[40px] overflow-hidden relative">
+        <div class="bg-[#EBEBE6] rounded-[32px] absolute top-7 left-6 p-2 overflow-hidden h-[65px] menu z-[2]">
+          <div class="flex items-center gap-3 w-[263px] menu-options">
+            <button class="more shrink-0">
+              <img src="/more.svg" alt="svg">
+            </button>
+            <div class="relative w-[218px] shrink-0 flex items-center justify-center rounded-full overflow-hidden">
+              <img src="/search.svg" alt="svg" class="absolute left-4">
+              <input type="text" class="w-full h-12 pl-12 pr-4 rounded-[20px] border border-white bg-white outline-none"
+                placeholder="Search" />
+            </div>
+            <button class="close shrink-0">
+              <img src="/close.svg" alt="svg">
+            </button>
+          </div>
+          <div class="px-2 py-4 space-y-4">
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/messages.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">messages</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/trending.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">trending</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/bookmarks.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">Bookmarks</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/gallery.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">Gallery</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/notifications.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">Notifications</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/people.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">People</span>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+              <div class="bg-white py-2 px-4 rounded-full w-14 h-10 shrink-0">
+                <img src="/settings.svg" alt="svg" class="shrink-0">
+              </div>
+              <span class="font-semibold capitalize">Settings</span>
+            </div>
+            <div class="w-full h-28 overflow-hidden rounded-2xl">
+              <img class="w-full h-full object-cover" src="/lndevui.png" alt="lndev/ui" />
+            </div>
+          </div>
+        </div>
+        <div class="overflow-hidden w-full h-full cover absolute">
+          <img src="/banner.jpeg" alt="Banner" class="w-full h-full object-cover" />
+          <img src="/profile.svg" alt="Profile" class="absolute top-10 right-6 shrink-0 profile" />
+        </div>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
